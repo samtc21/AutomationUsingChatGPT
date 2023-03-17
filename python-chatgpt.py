@@ -15,7 +15,7 @@ print(os.getenv("OPENAI_API_KEY"))
 args = input("Enter question to ChatGPT")
 
 api_endpoint = "https://api.openai.com/v1/completions"
-api_key = "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"
+api_key = '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'
 #api_key = os.getenv("OPENAI_API_KEY")
 request_headers = {
     'Content-Type': 'application/json',

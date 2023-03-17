@@ -1,9 +1,10 @@
 import os
 import openai
 
-#THIS CODE USING OPENAI MODULE INSTEAD OF REQUESTS ( NOT WORKING - ERROR WITH API KEY )
-openai.api_key = os.getenv("OPENAI_API_KEY")
-print(os.getenv("OPENAI_API_KEY"))
+#THIS CODE USING OPENAI MODULE INSTEAD OF REQUESTS
+
+openai.organization = "org-7tpQe76EhDCvU1HZNvTWI3vv"
+openai.api_key = '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'
 
 response = openai.Completion.create(
   model="text-davinci-003",
@@ -12,4 +13,4 @@ response = openai.Completion.create(
   temperature=0
 )
 
-print(response.json())
+print(response["choices"][0]["text"])
