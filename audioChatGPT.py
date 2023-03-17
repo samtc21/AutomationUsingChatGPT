@@ -2,6 +2,7 @@ import os
 import openai
 from uncod_to_ascii_converter import *
 
+
 openai.organization = "org-7tpQe76EhDCvU1HZNvTWI3vv"
 openai.api_key = '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'
 
