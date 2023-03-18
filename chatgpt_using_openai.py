@@ -1,7 +1,6 @@
-import os
 import openai
 
-#THIS CODE USING OPENAI MODULE INSTEAD OF REQUESTS
+# THIS CODE USING OPENAI MODULE INSTEAD OF REQUESTS
 
 openai.organization = "org-7tpQe76EhDCvU1HZNvTWI3vv"
 openai.api_key = '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'

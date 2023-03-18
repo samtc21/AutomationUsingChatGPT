@@ -9,20 +9,6 @@ def classify(question, categories):
         if type(element) != str:
             return print("categories need to be a list of strings only")
 
-def pic_modifier( image, instructions):
-    api_endpoint = "https://api.openai.com/v1/completions"
-    api_key = "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"
-    # api_key = os.getenv("OPENAI_API_KEY")
-
-
-    openai.Image.create_edit(
-        image=open("otter.png", "rb"),
-        mask=open("mask.png", "rb"),
-        prompt="A cute baby sea otter wearing a beret",
-        n=2,
-        size="1024x1024"
-    )
-
 def generate_pythonCode(question):
     api_endpoint = "https://api.openai.com/v1/completions"
     api_key = "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"

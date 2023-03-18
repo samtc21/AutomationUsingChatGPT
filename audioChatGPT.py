@@ -1,4 +1,3 @@
-import os
 import openai
 from uncod_to_ascii_converter import *
 
